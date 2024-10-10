@@ -14,6 +14,7 @@ public class igaguriGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int scoreDefult = 0;
         if(Input.GetMouseButtonDown(0))
         {
             GameObject igaguri=Instantiate(igaguriPrefab);
@@ -23,5 +24,6 @@ public class igaguriGenerator : MonoBehaviour
             //igaguri.GetComponent<igaguriController>().Shoot(new Vector3(0, 200, 2000));
             igaguri.GetComponent<igaguriController>().Shoot(worldDir.normalized*2000);
         }
+        scoreScript.instance.ScoreManeger(scoreDefult);
     }
 }

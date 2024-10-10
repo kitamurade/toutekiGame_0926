@@ -27,12 +27,12 @@ public class GameManeger : MonoBehaviour
         SceneManager.LoadScene("gameScene");
     }
     //エンドメソッド
-    public void EndGame(int igaguris)
+    public void EndGame()
     {
         //獲得したスコアとリザルト画面へ遷移
         sceneData.score = scoreScript.instance.GetCurrentScore();
-        sceneData.totalIgaguris = igaguris;
         SceneManager.LoadScene("resultScene");
+
     }
     //リスタートメソッド
     public void ResetGame()

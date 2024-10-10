@@ -10,7 +10,7 @@ public class scoreScript : MonoBehaviour
     public static scoreScript instance;
     //スコアを表示するためのtextコンポーネントとトータルスコア
     private TextMeshProUGUI scoreText;//
-    private int totalScore = 0;
+    public int totalScore = 0;
     //プライベートコンストラクタ
     void Awake()
     {
